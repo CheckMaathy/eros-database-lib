@@ -1,0 +1,47 @@
+{"properties": [
+  {
+    "name": "eros.database.username",
+    "type": "java.lang.String",
+    "description": "Database Username"
+  },
+  {
+    "name": "eros.database.password",
+    "type": "java.lang.String",
+    "description": "Database Secret"
+  },
+  {
+    "name": "eros.database.driver-class-name",
+    "type": "java.lang.String",
+    "description": "Database Driver Class Name"
+  },
+  {
+    "name": "eros.database.min-pool-size",
+    "type": "java.lang.String",
+    "description": "Database Min Pool Size"
+  },
+  {
+    "name": "eros.database.max-pool-size",
+    "type": "java.lang.String",
+    "description": "Database Max Pool Size"
+  },
+  {
+    "name": "eros.database.validation-timeout",
+    "type": "java.lang.String",
+    "description": "Database Validation Timeout"
+  },
+  {
+    "name": "eros.database.schema",
+    "type": "java.lang.String",
+    "description": "Database Schema"
+  },
+  {
+    "name": "eros.database.url",
+    "type": "java.lang.String",
+    "description": "Database Url"
+  },
+  {
+    "name": "eros.database.pool-name",
+    "type": "java.lang.String",
+    "description": "Database Username"
+  }
+]}

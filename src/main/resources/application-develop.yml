@@ -1,0 +1,65 @@
+spring:
+  banner:
+    location: banner.txt
+  main:
+    banner-mode: 'console'
+  application:
+    name: "@project.name@"
+  security:
+    user:
+      password: erostesting
+    filter:
+      order: 10
+  jpa:
+    database: POSTGRESQL
+    generate-ddl: false
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+  datasource:
+    continue-on-error: false
+    platform: postgres
+
+server:
+  port: 8080
+  servlet:
+    context-path: /erosproject
+
+eros:
+  dev:
+    options: true
+  database:
+    username: postgres
+    secret: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/eros
+    pool-name: ErosPool
+    min-pool-size: 5
+    max-pool-size: 20
+    max-lifetime: 1800000
+    validation-timeout: 250
+    schema: eros
+
+info:
+  app:
+    groupId: "@project.groupId@"
+    artifactId: "@project.artifactId@"
+    version: "@project.version@"
+    java.version: "@java.version@"
+
+cors:
+  origins: http://localhost
+
+redis:
+  master:
+    name: redismaster
+  sentinel:
+    host: http://localhost
+    port: 6379
+
+management:
+  health:
+    redis:
+      enabled: false
+
+typeCache: redis
